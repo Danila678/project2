@@ -1,0 +1,11 @@
+
+<h2>Available Courses</h2>
+<ul>
+    {% for course in courses %}
+    <li>
+        <h3>create django web site</h3>
+        <p>Start Date: 1</p>
+        <p>End Date: 2</p>
+        <a href="{% url 'course_detail' course.id %}">View Details</a>
+    </li>
+</ul>
